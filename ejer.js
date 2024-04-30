@@ -15,14 +15,12 @@ const server = servidor.createServer((req, resp)=>{
             console.log(num1);
             let num2 = arrayNum[1].split('=')[1];
             
-            let sum = num1 + num2;
+            let num = parseInt(num1);
+            let numdos = parseInt(num2);
+            let suma =  num + numdos;
 
-            //console.log(num2);
-            //let num = parseInt(num1);
-            // let numdos = parseInt(num2);
-            // let suma =  num + numdos;
-
-            resp.end(sum);
+            resp.end('R1 = '+ suma);
+            return;
         })
     }
     else{
